@@ -1,0 +1,219 @@
+/* ------------- variables  ---------- */
+:root {
+  --bg: #fff;
+  --font: #1b1c21;
+  --button: #ff3e79;
+  --text-muted: #7e7e82;
+  --highlight: #41f6d7;
+}
+
+/* ------------------------ fonts --------------- */
+
+/* regular */
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("../fonts/TTLakes/eot/TTLakes-Regular.eot");
+  src: url("TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes/woff/TTLakes-Regular.woff") format("woff"),
+    url("../fonts/TTLakes/ttf/TTLakes-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* bold */
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("../fonts/TTLakes/eot/TTLakes-Bold.eot");
+  src: url("TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes/woff/TTLakes-Bold.woff") format("woff"),
+    url("../fonts/TTLakes/ttf/TTLakes-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ---------------- base styles --------------- */
+body {
+  background: var(--bg);
+  min-height: 100vh;
+  font-family: "TT Lakes Regular", Arial, sans-serif;
+  font-weight: bold;
+}
+
+a {
+  color: var(--font);
+  text-decoration: none;
+}
+/* ------------ styles - 320px ------------------- */
+
+/* PAGE WRAPPER DIV */
+.container {
+  width: 320px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* ADD SCROLL TO SEE THE CONTENT */
+  height: 100%;
+  overflow-y: auto;
+  /* ADD SCROLL TO SEE THE CONTENT */
+}
+/* PAGE WRAPPER DIV */
+
+/* DIV WITH ALL THE ITEMS  */
+.nav__container--main-parent {
+  display: flex;
+  justify-content: space-between;
+  padding: 18.73px 24px 0;
+}
+/* DIV WITH ALL THE ITEMS  */
+
+/* DIV WITH CLOSE BTN AND LOGO  */
+.nav__container--start {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 50.46px;
+}
+/* DIV WITH CLOSE BTN AND LOGO  */
+
+/* DIV WITH EVERYTHING BUT SEARCH BTN  */
+.nav__container--top-parent {
+  margin-right: 34px;
+}
+/* DIV WITH EVERYTHING BUT SEARCH BTN  */
+
+/* DIV WITH SEARCH BTN  */
+.nav__container--end {
+  display: flex;
+  align-items: flex-start;
+}
+/* DIV WITH SEARCH BTN  */
+
+/* DIV WITH SERVICIES TEXT LINKS */
+.nav__servicies {
+  position: relative;
+  margin-bottom: 268px;
+}
+/* DIV WITH SERVICIES TEXT LINKS */
+
+/* BLUE HIGHLIGHT LINE */
+.nav__services-item-highlight {
+  display: inline-block;
+  width: 4px;
+  height: 32px;
+  position: absolute;
+  left: -24px;
+  top: 0;
+}
+/* BLUE HIGHLIGHT LINE */
+
+/* COMPANY LOGO */
+.nav__logo {
+  margin-left: 16.73px;
+}
+/* COMPANY LOGO */
+
+/* PINK BUTTONS */
+.nav__button,
+.nav__contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--button);
+  border: none;
+  cursor: pointer;
+}
+
+.nav__icon,
+.nav__contact-icon {
+  width: 17px;
+  height: 17px;
+}
+/* PINK BUTTONS */
+
+/* LI WITH SERVICIES TEXT LINKS */
+.nav__services-item,
+.nav__servicies-item--first {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 32px;
+}
+/* LI WITH SERVICIES TEXT LINKS */
+
+/* A TAG WITH SERVICIES TEXT LINKS */
+.nav__services-item-link--first {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+}
+/* A TAG WITH SERVICIES TEXT LINKS */
+
+/* CONTACT SECTION BTNS */
+.nav__contact-buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav__contact-item {
+  margin: 0 16px 16px 0;
+}
+
+.nav__contact-item:last-child {
+  margin-right: 0;
+}
+/* CONTACT SECTION BTNS */
+
+/* EMAIL LI */
+.nav__contact-info-item--first {
+  margin-bottom: 12px;
+}
+/* EMAIL LI */
+
+/* EMAIL LI TEXT */
+.nav__contact-info-link--email {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+/* EMAIL LI TEXT */
+
+/* PHONE NUMBER LI */
+.nav__contact-info-item--last {
+  margin-bottom: 40px;
+}
+/* PHONE NUMBER LI */
+
+/* PHONE NUMBER LI TEXT */
+.nav__contact-info-link--phone {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}
+/* PHONE NUMBER LI TEXT */
+
+/* LANGUAGES SECTION */
+.nav__contact-languages-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.language-link--ru {
+  color: var(--text-muted);
+}
+
+.nav__contact-languages-item {
+  margin: 0 7px 32px 0;
+}
+/* LANGUAGES SECTION */
+
+/* BTN ANIMATION */
+.nav__button:hover,
+.nav__contact-button:hover {
+  filter: brightness(80%);
+  opacity: 0.8;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+/* BTN ANIMATION */
